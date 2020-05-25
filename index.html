@@ -8,11 +8,10 @@
   <meta name="keywords" content="βTorrent, btorrent, client, webtorrent, browser, torrent, stream, bittorrent, torrenting, sharing, filesharing">
   <meta name="author" content="Diego Rodríguez Baquero - DiegoRBaquero">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script
-      src="https://cdn.jsdelivr.net/g/webtorrent@0,momentjs@2,angularjs@1.5(angular.min.js+angular-route.min.js+angular-sanitize.min.js),angular.ui-grid@3.1,angular.ng-notify@0.8,angular.file-upload@12"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize@3.0,skeleton@2.0,angular.ng-notify@0.8(ng-notify.min.css)">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/angular.ui-grid/3.1/ui-grid.min.css">
+  <script src="https://cdn.jsdelivr.net/combine/npm/webtorrent@0/webtorrent.min.js,npm/moment@2,npm/angular@1.5/angular.min.js,npm/angular-route@1.5/angular-route.min.js,npm/angular-sanitize@1.5/angular-sanitize.min.js,npm/angular-ui-grid@3/ui-grid.min.js,gh/matowens/ng-notify/dist/ng-notify.min.js,npm/ng-file-upload@12.2.13/dist/ng-file-upload.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize@3,skeleton@2,angular.ng-notify@0.8(ng-notify.min.css)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/angular.ui-grid/3/ui-grid.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="BTorrentCtrl" ng-cloak="">
@@ -25,7 +24,8 @@
 <div id="viewer" ng-style="$root.viewerStyle"></div>
 <div id="view" ng-view></div>
 <footer>
-  <a class="button" href="https://github.com/a-sync/BTorrent/issues" target="_blank"><i class="fa fa-github"></i> Suggest a feature / Report a bug <i class="fa fa-comment"></i></a><br>
+  <a class="button" href="https://github.com/DiegoRBaquero/BTorrent/issues" target="_blank"><i class="fa fa-github"></i> Suggest a feature / Report a bug <i class="fa fa-comment"></i></a><br>
+  <b><a href="https://github.com/DiegoRBaquero/btorrent" target="_blank" style="text-decoration: none">βTorrent</a> is an FOSS project made with <span style="color: red">♥</span> by <a href="https://diegorbaquero.com" target="_blank" style="text-decoration: none">DiegoRBaquero</a></b><br>
   <b> <a href="https://tracker.btorrent.xyz/stats" target="_blank">βTorrent's Tracker Stats</a></b><br>
   Powered by <a href="https://github.com/webtorrent/webtorrent" target="_blank">WebTorrent</a><br>
   </div>
